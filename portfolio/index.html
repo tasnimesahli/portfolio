@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasnime Sahli | Developer & Designer</title>
+    <meta name="description" content="Portfolio of Tasnime Sahli, Web Developer and UI/UX Designer from Tangier, Morocco.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Animated Background (Cubes + Gradient) -->
+    <div class="floating-cubes">
+        <div class="cube cube-1"></div>
+        <div class="cube cube-2"></div>
+        <div class="cube cube-3"></div>
+        <div class="cube cube-4"></div>
+        <div class="cube cube-5"></div>
+    </div>
+    <div class="bg-gradient"></div>
+
+    <!-- Navigation -->
+    <header class="navbar glass-panel">
+        <div class="nav-container">
+
+            <nav class="nav-links">
+                <a href="#about" class="interactive-link" data-i18n="nav_about">About</a>
+                <a href="#skills" class="interactive-link" data-i18n="nav_skills">Skills</a>
+                <a href="#projects" class="interactive-link" data-i18n="nav_projects">Projects</a>
+                <a href="#contact" class="interactive-link" data-i18n="nav_contact">Contact</a>
+            </nav>
+            <div class="controls">
+                <button id="sound-toggle" aria-label="Toggle Sound" class="sound-off interactive-btn" title="Enable Sound Effects">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <select id="language-switcher" aria-label="Language Switcher" class="interactive-select">
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                    <option value="ar">AR</option>
+                </select>
+            </div>
+            <button class="mobile-menu-btn interactive-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section reveal-up">
+            <div class="hero-content text-center">
+                <div class="hero-badge glass-card mb-2">
+                    <span class="status-dot"></span> <span data-i18n="available_status">Available for Internship</span>
+                </div>
+                <h1 class="hero-title">
+                    <span data-i18n="hero_hello">Hi, I'm</span> <span class="text-primary">Tasnime Sahli</span>
+                </h1>
+                <h2 class="hero-subtitle text-accent" data-i18n="role">Web Developer & UI/UX Designer</h2>
+                <p class="hero-intro text-muted mx-auto" data-i18n="hero_intro">Passionate about building modern, responsive websites and designing intuitive user experiences. Crafting elegant digital solutions from Tangier, Morocco.</p>
+                
+                <div class="hero-actions mt-3 flex-center">
+                    <a href="#projects" class="btn btn-primary interactive-btn"><span data-i18n="view_projects">View Projects</span> <i class="fas fa-arrow-right"></i></a>
+                    <a href="assets/cv/Tasnime_Sahli_CV.pdf" download class="btn btn-outline interactive-btn"><i class="fas fa-file-pdf"></i> <span data-i18n="download_cv">Download CV</span></a>
+                </div>
+                <div class="social-links-inline mt-2 flex-center">
+                    <a href="https://github.com/tasnimesahli" target="_blank" class="interactive-btn"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tasnime-sahli-476ab13bb" target="_blank" class="interactive-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:tasnimsahli97@gmail.com" class="interactive-btn"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT & EDUCATION -->
+        <section id="about" class="section reveal-up">
+            <div class="section-header text-center mb-3">
+                <h3 class="section-title" data-i18n="about_title">Education & Background</h3>
+                <div class="title-underline"></div>
+            </div>
+            <div class="grid-2-col">
+                <div class="glass-card p-3">
+                    <div class="icon-circle mb-2"><i class="fas fa-user-graduate"></i></div>
+                    <h4 data-i18n="who_am_i">My Journey</h4>
+                    <p class="text-muted mt-1" data-i18n="about_desc">I am an 18-year-old student focusing on front-end, back-end, and UI/UX design. I bridge the gap between aesthetics and functionality, ensuring projects look beautiful and run flawlessly.</p>
+                </div>
+                <div class="glass-card p-3 timeline-card">
+                    <div class="timeline-item">
+                        <div class="timeline-dot primary-dot"></div>
+                        <h4 class="text-primary" data-i18n="edu_solicode">Solicode</h4>
+                        <p class="timeline-date"><span class="badge badge-accent" data-i18n="present">Present</span></p>
+                        <p class="text-sm text-muted" data-i18n="edu_web_desc">Learning full-stack web development and UI/UX design with a focus on real-world applications.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h4><span data-i18n="edu_bac_title">Bac Science</span></h4>
+                        <p class="timeline-date">2025</p>
+                        <p class="text-sm text-muted" data-i18n="edu_bac_desc">High school diploma specializing in Sciences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section reveal-up">
+            <div class="section-header text-center mb-3">
+                <h3 class="section-title" data-i18n="tech_skills_title">Technical Skills</h3>
+                <div class="title-underline"></div>
+            </div>
+            <div class="glass-card p-3">
+                <div class="skills-grid">
+                    <!-- HTML -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name fw-600">HTML</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="90%"></div></div>
+                    </div>
+                    <!-- CSS -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name fw-600">CSS</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="90%"></div></div>
+                    </div>
+                    <!-- MySQL -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name fw-600">MySQL</span>
+                            <span class="skill-percent">97%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill accent-fill" data-width="97%"></div></div>
+                    </div>
+                    <!-- PHP -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name fw-600">PHP</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill accent-fill" data-width="80%"></div></div>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name fw-600">JavaScript</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="75%"></div></div>
+                    </div>
+                    <!-- Figma -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name fw-600">Figma</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill design-fill" data-width="60%"></div></div>
+                    </div>
+                    <!-- Canva -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name fw-600">Canva</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill design-fill" data-width="60%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LANGUAGES SECTION -->
+        <section id="languages" class="section reveal-up">
+            <div class="section-header text-center mb-3">
+                <h3 class="section-title" data-i18n="spoken_languages_title">Languages</h3>
+                <div class="title-underline"></div>
+            </div>
+            <div class="grid-2-col">
+                <div class="glass-card p-3 flex-center-col text-center">
+                    <div class="icon-circle mb-2"><i class="fas fa-globe"></i></div>
+                    <p class="text-muted" data-i18n="languages_intro">My language abilities allow me to communicate effectively in diverse environments, collaborate seamlessly with international teams, and quickly understand technical documentation across the globe.</p>
+                </div>
+                <div class="glass-card p-3">
+                    <div class="language-bars">
+                        <!-- Arabic -->
+                        <div class="lang-item">
+                            <div class="lang-info">
+                                <span class="fw-600" data-i18n="lang_arabic">Arabic</span>
+                                <span class="badge badge-primary" data-i18n="native">Native</span>
+                            </div>
+                            <div class="progress-bar-bg lang-bg">
+                                <div class="progress-bar-fill lang-fill" data-width="100%">
+                                    <div class="progress-arrow"><i class="fas fa-caret-down"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- French -->
+                        <div class="lang-item">
+                            <div class="lang-info">
+                                <span class="fw-600" data-i18n="lang_french">French</span>
+                                <span class="badge badge-accent">B2</span>
+                            </div>
+                            <div class="progress-bar-bg lang-bg">
+                                <div class="progress-bar-fill lang-fill" data-width="75%">
+                                    <div class="progress-arrow"><i class="fas fa-caret-down"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- English -->
+                        <div class="lang-item">
+                            <div class="lang-info">
+                                <span class="fw-600" data-i18n="lang_english">English</span>
+                                <span class="badge badge-accent">B2</span>
+                            </div>
+                            <div class="progress-bar-bg lang-bg">
+                                <div class="progress-bar-fill lang-fill" data-width="75%">
+                                    <div class="progress-arrow"><i class="fas fa-caret-down"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Spanish -->
+                        <div class="lang-item">
+                            <div class="lang-info">
+                                <span class="fw-600" data-i18n="lang_spanish">Spanish</span>
+                                <span class="badge badge-outline">A1</span>
+                            </div>
+                            <div class="progress-bar-bg lang-bg">
+                                <div class="progress-bar-fill lang-fill" data-width="25%">
+                                    <div class="progress-arrow"><i class="fas fa-caret-down"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS (TEXT-ONLY) -->
+        <section id="projects" class="section reveal-up">
+            <div class="section-header text-center mb-3">
+                <h3 class="section-title" data-i18n="projects_title">Featured Projects</h3>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="project-filters glass-panel mb-3 mx-auto">
+                <button class="filter-btn active interactive-btn" data-filter="all" data-i18n="filter_all">All</button>
+                <button class="filter-btn interactive-btn" data-filter="js">JavaScript</button>
+                <button class="filter-btn interactive-btn" data-filter="php">PHP / MySQL</button>
+                <button class="filter-btn interactive-btn" data-filter="html">HTML/CSS</button>
+            </div>
+
+            <div class="projects-grid">
+                
+                <!-- Tailor Project (Client / PHP) -->
+                <div class="text-project-card glass-card reveal-up special-card" data-category="php">
+                    <div class="card-top flex-between mb-1">
+                        <i class="fas fa-briefcase card-icon text-accent"></i>
+                        <span class="badge badge-warning pulse-badge" data-i18n="in_progress">In Progress</span>
+                    </div>
+                    <h3 class="mb-1 text-primary" data-i18n="tailor_title">Tailor Management Website</h3>
+                    <p class="text-sm fw-600 mb-1"><i class="fas fa-user-tie text-accent"></i> <span data-i18n="client_project">Client Project</span></p>
+                    <p class="text-muted text-sm mb-2" data-i18n="tailor_desc">A real-world ongoing project to help a local tailor manage customer requests, showcase services, and handle appointment bookings efficiently.</p>
+                    <div class="tag-cloud mb-2">
+                        <span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">JavaScript</span><span class="tech-tag">HTML/CSS</span>
+                    </div>
+                    <div class="card-bottom mt-auto">
+                        <span class="text-xs text-muted" data-i18n="feat_booking">Appointment Booking, Services Listing</span>
+                    </div>
+                </div>
+
+                <!-- Recipe System (PHP) -->
+                <div class="text-project-card glass-card reveal-up delay-1" data-category="php">
+                    <div class="card-top flex-between mb-1">
+                        <i class="fas fa-utensils card-icon text-primary"></i>
+                        <span class="badge badge-outline" data-i18n="completed">Completed</span>
+                    </div>
+                    <h3 class="mb-1" data-i18n="proj4_title">Recipe Management System</h3>
+                    <p class="text-muted text-sm mb-2" data-i18n="proj4_desc">A full-stack CRUD application to manage, add, and explore food recipes.</p>
+                    <div class="tag-cloud mb-2">
+                        <span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Weather App (JS) -->
+                <div class="text-project-card glass-card reveal-up delay-2" data-category="js">
+                    <div class="card-top flex-between mb-1">
+                        <i class="fas fa-cloud-sun card-icon text-primary"></i>
+                        <span class="badge badge-outline" data-i18n="completed">Completed</span>
+                    </div>
+                    <h3 class="mb-1" data-i18n="proj1_title">Weather App</h3>
+                    <p class="text-muted text-sm mb-2" data-i18n="proj1_desc">A dynamic weather application fetching real-time data using a public API.</p>
+                    <div class="tag-cloud mb-2">
+                        <span class="tech-tag">JavaScript</span><span class="tech-tag">API</span><span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+
+                <!-- Calculator (JS) -->
+                <div class="text-project-card glass-card reveal-up" data-category="js">
+                    <div class="card-top flex-between mb-1">
+                        <i class="fas fa-calculator card-icon text-primary"></i>
+                        <span class="badge badge-outline" data-i18n="completed">Completed</span>
+                    </div>
+                    <h3 class="mb-1" data-i18n="proj2_title">Calculator</h3>
+                    <p class="text-muted text-sm mb-2" data-i18n="proj2_desc">A sleek, web-based calculator with essential mathematical operations.</p>
+                    <div class="tag-cloud mb-2">
+                        <span class="tech-tag">JavaScript</span><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+
+                <!-- To-Do List (JS) -->
+                <div class="text-project-card glass-card reveal-up delay-1" data-category="js">
+                    <div class="card-top flex-between mb-1">
+                        <i class="fas fa-tasks card-icon text-primary"></i>
+                        <span class="badge badge-outline" data-i18n="completed">Completed</span>
+                    </div>
+                    <h3 class="mb-1" data-i18n="proj3_title">To-Do List</h3>
+                    <p class="text-muted text-sm mb-2" data-i18n="proj3_desc">A task management app to organize daily activities with local storage support.</p>
+                    <div class="tag-cloud mb-2">
+                        <span class="tech-tag">JavaScript</span><span class="tech-tag">DOM</span>
+                    </div>
+                </div>
+
+                <!-- E-commerce (HTML) -->
+                <div class="text-project-card glass-card reveal-up delay-2" data-category="html">
+                    <div class="card-top flex-between mb-1">
+                        <i class="fas fa-shopping-bag card-icon text-primary"></i>
+                        <span class="badge badge-outline" data-i18n="completed">Completed</span>
+                    </div>
+                    <h3 class="mb-1" data-i18n="proj5_title">E-commerce Website</h3>
+                    <p class="text-muted text-sm mb-2" data-i18n="proj5_desc">A responsive front-end design for an online store featuring product galleries.</p>
+                    <div class="tag-cloud mb-2">
+                        <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT & HOBBIES -->
+        <section id="contact" class="section reveal-up mb-3">
+            <div class="grid-2-col">
+                <!-- Hobbies -->
+                <div class="glass-card p-3">
+                    <h3 class="mb-2 text-primary" data-i18n="hobbies_title">My Hobbies</h3>
+                    <div class="hobbies-list">
+                        <div class="hobby-item"><i class="fas fa-laptop-code text-accent"></i> <span data-i18n="hobby_dev">Web Dev Learning</span></div>
+                        <div class="hobby-item"><i class="fas fa-paint-brush text-accent"></i> <span data-i18n="hobby_design">UI/UX Design</span></div>
+                        <div class="hobby-item"><i class="fas fa-palette text-accent"></i> <span data-i18n="hobby_canva">Canva Creations</span></div>
+                        <div class="hobby-item"><i class="fas fa-book-open text-accent"></i> <span data-i18n="hobby_learning">Continuous Learning</span></div>
+                    </div>
+                    <div class="mt-3">
+                        <h4 class="mb-1" data-i18n="collab_title">Collaboration</h4>
+                        <p class="text-sm text-muted mb-1"><i class="fas fa-check text-primary"></i> <span data-i18n="collab_team">Open to team projects & internships</span></p>
+                        <p class="text-sm text-muted"><i class="fas fa-check text-primary"></i> <span data-i18n="collab_freelance">Freelance-ready mindset</span></p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card p-3">
+                    <h3 class="mb-1 text-primary" data-i18n="contact_form_title">Let's Connect</h3>
+                    
+                    <!-- Personal Info Header -->
+                    <div class="contact-personal-info mb-2 p-2">
+                        <div class="info-row"><i class="fas fa-user"></i> <span class="fw-600">Tasnime Sahli</span></div>
+                        <div class="info-row"><i class="fas fa-birthday-cake"></i> <span data-i18n="age">18 years old</span></div>
+                        <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span data-i18n="location">Tangier, Morocco</span></div>
+                        <div class="info-row"><i class="fas fa-graduation-cap"></i> <span data-i18n="role">Web Developer & UI/UX Designer</span></div>
+                    </div>
+
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xyklaedz" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" required class="form-input interactive-input" placeholder=" ">
+                            <label for="name" data-i18n="name_placeholder">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" required class="form-input interactive-input" placeholder=" ">
+                            <label for="email" data-i18n="email_placeholder">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" required class="form-input interactive-input" placeholder=" ">
+                            <label for="subject" data-i18n="subject_placeholder">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="4" required maxlength="500" class="form-input interactive-input" placeholder=" "></textarea>
+                            <label for="message" data-i18n="message_placeholder">Your Message</label>
+                            <div class="char-counter text-xs text-muted mt-1 text-right">Max 500 characters</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width interactive-btn" id="submitBtn">
+                            <span class="btn-text" data-i18n="send_button">Send Message</span>
+                            <i class="fas fa-spinner fa-spin d-none"></i>
+                        </button>
+                        <div id="formSuccess" class="form-success-msg d-none mt-1">
+                            <i class="fas fa-check-circle"></i> <span data-i18n="success_message">Message sent successfully!</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer text-center text-muted mb-2 reveal-up">
+            <p>&copy; 2026 Tasnime Sahli. <span data-i18n="footer_text">Built with passion.</span></p>
+        </footer>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
